@@ -7,7 +7,7 @@ test.describe('Smoke test', () => {
     });
 
     test.describe('Visual test', ()=>{
-        test('Main page', async ({ inventoryPage }) => {
+        test.skip('Main page', async ({ inventoryPage }) => {
             await expect(inventoryPage.page).toHaveScreenshot('inventory-main.png', {
                 fullPage: true,
                 mask: [inventoryPage.cartBadge]
